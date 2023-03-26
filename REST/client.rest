@@ -1,0 +1,49 @@
+### Buscar todo os ID
+GET http://localhost:3333/user/
+
+### Buscar ID especifico
+GET http://localhost:3333/user/
+Content-Type: application/json
+
+### Inserir usuario no banco
+POST http://localhost:3333/user/
+Content-Type: application/json
+
+{
+"nome": "",
+"cpf": "",
+"email": "",
+"telefone": "",
+"cidade": "",
+"cep": ""
+}
+
+### Atualizar um usuario pelo ID no Banco
+PUT http://localhost:3333/user/
+content-type: application/json
+
+{
+"nome": "",
+"cep": ""
+}
+
+###ADICIONAR DINHEIRO AO USUÁRIO:
+PUT http://localhost:3333/user/deposito/
+content-type: application/json
+
+{
+"tipo": "",
+"valor":  
+}
+
+###RETIRAR DINHEIRO DO USUÁRIO:
+PUT http://localhost:3333/user/retirada/
+content-type: application/json
+
+{
+"tipo": "",
+"valor": 
+}
+
+### Deletar um usuario pelo ID no banco
+DELETE http://localhost:3333/user/
